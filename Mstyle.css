@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#d1{
+  width: 1500px;
+  height: 200px;
+  border: 5px solid black;
+  background: red;
+}
+#d2{
+  width: 20px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: yellow;
+  position: relative;
+  top:150px;
+}
+.animate{
+  animation: jump 500ms;
+}
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top:100px;}
+  70%{top: 100px;}
+  100%{top:150px;}
+}
+#d3{
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border: 2px solid black;
+  position:relative;
+  top: 130px;
+  left: 480px;
+  animation: block 3s infinite linear;
+
+}
+@keyframes block{
+  0%{left: 1500px;}
+  100%{left:-40px;}
+}
